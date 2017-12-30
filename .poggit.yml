@@ -1,0 +1,7 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/StrafelessPvP/PlexiumPE-ShopGUI
+branches:
+- master
+projects:
+  PlexiumPE-ShopGUI:
+    path: ""
+...
