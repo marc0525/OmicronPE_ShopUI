@@ -2,8 +2,8 @@ name: GuiShop
 main: GuiShop\Main
 version: 0.0.1
 api: 3.0.0-ALPHA9
-author: Daniktheboss
-description: Buy stuff using gui
+author: StrafelessPvP
+description: PlexiumPE-ShopGUI
 commands:
  shop:
   description: Opens the shop gui
