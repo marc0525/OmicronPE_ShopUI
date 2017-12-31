@@ -117,7 +117,7 @@ public $Blocks = [
     "Chest" => [54,0,100,50]
   ];
 	
-  public #Mobs = [
+  public $Mobs = [
     "ICON" => ["Mobs",52,0],
     "Blaze Egg" => [383,94,50000,45000],
     "Creeper Egg" => [383,33,50000,45000],
