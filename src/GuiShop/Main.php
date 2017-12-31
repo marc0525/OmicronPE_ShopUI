@@ -260,15 +260,15 @@ public $Blocks = [
               $cost = $item[2]*$amount;
               $sell = $item[3]*$amount;
               if($sell == 0){
-                $player->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::RED . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "This is not sellable!");
+                $player->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::RED . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "§cThis is not sellable!");
                 return true;
               }
               if($player->getInventory()->contains(Item::get($id,$damage,$amount))){
                 $player->getInventory()->removeItem(Item::get($id,$damage,$amount));
                 EconomyAPI::getInstance()->addMoney($player, $sell);
-                $player->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You have sold $amount $iname for $$sell");
+                $player->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "§bYou have sold §3$amount $iname §bfor §3$$sell");
               }else{
-                $player->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::RED . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You do not have $amount $iname!");
+                $player->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::RED . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "§2You do not have §5$amount $iname!");
               }
               unset($this->item[$player->getName()]);
               unset($this->shop[$player->getName()]);
@@ -302,9 +302,9 @@ public $Blocks = [
               if(EconomyAPI::getInstance()->myMoney($player) > $cost){
                 $player->getInventory()->addItem(Item::get($id,$damage,$amount));
                 EconomyAPI::getInstance()->reduceMoney($player, $cost);
-                $player->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You purchased $amount $iname for $$cost");
+                $player->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "§bYou purchased §3$amount $iname §bfor §3$$cost");
               }else{
-                $player->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::RED . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "You do not have enough money to buy $amount $iname");
+                $player->sendMessage(TF::BOLD . TF::DARK_GRAY . "(" . TF::RED . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "§2You do not have enough money to buy §5$amount $iname");
               }
               unset($this->item[$player->getName()]);
               unset($this->shop[$player->getName()]);
