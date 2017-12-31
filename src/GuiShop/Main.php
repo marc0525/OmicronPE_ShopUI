@@ -119,12 +119,12 @@ public $Blocks = [
 	
   public $Mobs = [
     "ICON" => ["Mobs",52,0],
-    "Blaze Egg" => [383,94,50000,45000],
-    "Creeper Egg" => [383,33,50000,45000],
-    "Skeleton Egg" => [383,34,50000,45000],
-    "Zombie Egg" => [383,32,50000,45000],
-    "Husk egg" => [383,47,50000,45000],
-    "Zombie PigMan" => [383,36,50000,45000],
+    "Blaze" => [383,94,50000,45000],
+    "Creeper" => [383,33,50000,45000],
+    "Skeleton" => [383,34,50000,45000],
+    "Zombie" => [383,32,50000,45000],
+    "Husk" => [383,47,50000,45000],
+    "Zombie_Pigman" => [383,36,50000,45000],
     "Mob Spawner" => [52,0,55000,50000]
   ];
 	
@@ -139,7 +139,7 @@ public $Blocks = [
   }
 
   public function sendMainShop(Player $player){
-    $ui = new SimpleForm("§6Shop","       §7Purchase and Sell items Here!");
+    $ui = new SimpleForm("§6Void§bFactions§cPE §dShop","       §aPurchase and Sell items Here!");
     foreach($this->item as $category){
       if(isset($category["ICON"])){
         $rawitemdata = $category["ICON"];
