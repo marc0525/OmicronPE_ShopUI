@@ -128,6 +128,17 @@ public $Blocks = [
     "Zombie_Pigman" => [383,36,50000,45000],
     "Mob Spawner" => [52,0,55000,50000]
   ];
+
+  public $Potions = [
+    "ICON" => ["Potions",373,0],
+    "Strength" => [373,8201,1000,500],
+    "Regeneration" => [373,8193,1000,500],
+    "Speed" => [373,8194,1000,500],
+    "Fire Resistance" => [373,8259,1000,500],
+    "Poison (SPLASH)" => [373,16420,1000,500],
+    "Weakness (SPLASH)" => [373,16456,1000,500],
+    "Slowness (SPLASH)" => [373,16458,1000,500]
+  ];
 	
   public function onEnable(){
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
@@ -136,7 +147,7 @@ public $Blocks = [
 		PacketPool::registerPacket(new ModalFormResponsePacket());
 		PacketPool::registerPacket(new ServerSettingsRequestPacket());
 		PacketPool::registerPacket(new ServerSettingsResponsePacket());
-    $this->item = [$this->Mobs, $this->Raiding, $this->Farming, $this->Armor, $this->Tools, $this->Food, $this->Ores, $this->Blocks, $this->Miscellaneous];
+    $this->item = [$this->Potions, $$this->Mobs, $this->Raiding, $this->Farming, $this->Armor, $this->Tools, $this->Food, $this->Ores, $this->Blocks, $this->Miscellaneous];
   }
 
   public function sendMainShop(Player $player){
