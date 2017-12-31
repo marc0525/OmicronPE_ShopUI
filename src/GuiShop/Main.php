@@ -142,14 +142,14 @@ public $Blocks = [
   ];
 
   public $Skulls = [
-   "ICON" => ["Skulls",144,0],
-   "Zombie Skull" => [144,2,500,300],
-   "Wither Skeleton Skull" => [144,1,500,300],
-   "Skin Head" => [144,3,50,30],
-   "Creeper Skull" => [144,4,500,300],
-   "Dragon Skull" => [144,5,1000,600],
-   "Skeleton Skull" => [144,0,500,300]
- ];
+    "ICON" => ["Skulls",144,0],
+    "Zombie Skull" => [144,2,500,300],
+    "Wither Skeleton Skull" => [144,1,500,300],
+    "Skin Head" => [144,3,50,30],
+    "Creeper Skull" => [144,4,500,300],
+    "Dragon Skull" => [144,5,1000,600],
+    "Skeleton Skull" => [144,0,500,300]
+  ];
 	
   public function onEnable(){
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
