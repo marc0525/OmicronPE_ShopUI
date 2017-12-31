@@ -92,7 +92,7 @@ public $Blocks = [
 	"Cooked Chicken" => [366,0,10,5],
     "Steak" => [364,0,10,5],
     "Golden Apple" => [322,0,500,100],
-    "Enchanted Golden Apple" => [466,0,50000,100]
+    "Enchanted Golden Apple" => [466,0,1000,100]
   ];
 
   public $Miscellaneous = [
