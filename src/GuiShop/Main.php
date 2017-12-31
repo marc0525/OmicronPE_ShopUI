@@ -105,6 +105,7 @@ public $Blocks = [
     "Enderpearl" => [368,0,1000,500],
     "Bone" => [352,0,50,25],
     "Book & Quill" => [386,0,100,0]
+    "Elytra" => [444,0,1000,500]
   ];
 
   public $Raiding = [
@@ -135,10 +136,20 @@ public $Blocks = [
     "Regeneration" => [373,28,1000,500],
     "Speed" => [373,16,1000,500],
     "Fire Resistance" => [373,13,1000,500],
-    "Poison (SPLASH)" => [373,27,1000,500],
-    "Weakness (SPLASH)" => [373,35,1000,500],
-    "Slowness (SPLASH)" => [373,17,1000,500]
+    "Poison (SPLASH)" => [438,27,1000,500],
+    "Weakness (SPLASH)" => [438,35,1000,500],
+    "Slowness (SPLASH)" => [438,17,1000,500]
   ];
+
+  public $Skulls = [
+   "ICON" => ["Skulls",144,0],
+   "Zombie Skull" => [144,2,500,300],
+   "Wither Skeleton Skull" => [144,1,500,300],
+   "Skin Head" => [144,3,50,30],
+   "Creeper Skull" => [144,4,500,300],
+   "Dragon Skull" => [144,5,1000,600],
+   "Skeleton Skull" => [144,0,500,300]
+ ];
 	
   public function onEnable(){
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
@@ -147,7 +158,7 @@ public $Blocks = [
 		PacketPool::registerPacket(new ModalFormResponsePacket());
 		PacketPool::registerPacket(new ServerSettingsRequestPacket());
 		PacketPool::registerPacket(new ServerSettingsResponsePacket());
-    $this->item = [$this->Potions, $this->Mobs, $this->Raiding, $this->Farming, $this->Armor, $this->Tools, $this->Food, $this->Ores, $this->Blocks, $this->Miscellaneous];
+    $this->item = [$this->Skulls, $this->Potions, $this->Mobs, $this->Raiding, $this->Farming, $this->Armor, $this->Tools, $this->Food, $this->Ores, $this->Blocks, $this->Miscellaneous];
   }
 
   public function sendMainShop(Player $player){
