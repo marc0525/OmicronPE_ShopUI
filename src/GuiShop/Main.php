@@ -131,13 +131,13 @@ public $Blocks = [
 
   public $Potions = [
     "ICON" => ["Potions",373,0],
-    "Strength" => [373,8201,1000,500],
-    "Regeneration" => [373,8193,1000,500],
-    "Speed" => [373,8194,1000,500],
-    "Fire Resistance" => [373,8259,1000,500],
-    "Poison (SPLASH)" => [373,16420,1000,500],
-    "Weakness (SPLASH)" => [373,16456,1000,500],
-    "Slowness (SPLASH)" => [373,16458,1000,500]
+    "Strength" => [373,33,1000,500],
+    "Regeneration" => [373,28,1000,500],
+    "Speed" => [373,16,1000,500],
+    "Fire Resistance" => [373,13,1000,500],
+    "Poison (SPLASH)" => [373,27,1000,500],
+    "Weakness (SPLASH)" => [373,35,1000,500],
+    "Slowness (SPLASH)" => [373,17,1000,500]
   ];
 	
   public function onEnable(){
