@@ -35,7 +35,7 @@ public $Blocks = [
     "Dark Oak Wood" => [162,1,30,15],
 	"Cobblestone" => [4,0,10,5],
 	"Obsidian" => [49,0,500,250],
-	"Bedrock" => [7,0,50000,10000],
+	"Bedrock" => [7,0,50000,500],
 	"Sand " => [12,0,15,7],
     "Sandstone " => [24,0,15,7],
 	"Nether Rack" => [87,0,15,7],
@@ -92,13 +92,13 @@ public $Blocks = [
 	"Cooked Chicken" => [366,0,10,5],
     "Steak" => [364,0,10,5],
     "Golden Apple" => [322,0,500,100],
-    "Enchanted Golden Apple" => [466,0,5000,1000]
+    "Enchanted Golden Apple" => [466,0,50000,100]
   ];
 
   public $Miscellaneous = [
     "ICON" => ["Miscellaneous",368,0],
-	"PVP Elixir" => [373,101,35000,1000],
-	"Raiding Elixir" => [373,100,10000,1000],
+	"PVP Elixir" => [373,101,35000,500],
+	"Raiding Elixir" => [373,100,10000,500],
 	"Furnace" => [61,0,20,10],
     "Crafting Table" => [58,0,20,10],
 	"Ender Chest " => [130,0,1000,500],
@@ -116,39 +116,39 @@ public $Blocks = [
     "Water" => [9,0,500,250],
     "Redstone" => [331,0,50,25],
     "Chest" => [54,0,100,50],
-    "TNT" => [46,0,1000,500]
+    "TNT" => [46,0,10000,500]
   ];
 	
   public $Mobs = [
     "ICON" => ["Mobs",52,0],
-    "Blaze" => [383,94,50000,45000],
-    "Creeper" => [383,33,50000,45000],
-    "Skeleton" => [383,34,50000,45000],
-    "Zombie" => [383,32,50000,45000],
-    "Husk" => [383,47,50000,45000],
-    "Zombie_Pigman" => [383,36,50000,45000],
-    "Mob Spawner" => [52,0,55000,50000]
+    "Blaze" => [383,94,50000,1000],
+    "Creeper" => [383,33,50000,1000],
+    "Skeleton" => [383,34,50000,1000],
+    "Zombie" => [383,32,50000,1000],
+    "Husk" => [383,47,50000,1000],
+    "Zombie_Pigman" => [383,36,50000,1000],
+    "Mob Spawner" => [52,0,55000,2000]
   ];
 
   public $Potions = [
     "ICON" => ["Potions",373,0],
-    "Strength" => [373,33,1000,500],
-    "Regeneration" => [373,28,1000,500],
+    "Strength" => [373,33,1000,100],
+    "Regeneration" => [373,28,1000,100],
     "Speed" => [373,16,1000,500],
-    "Fire Resistance" => [373,13,1000,500],
-    "Poison (SPLASH)" => [438,27,1000,500],
-    "Weakness (SPLASH)" => [438,35,1000,500],
-    "Slowness (SPLASH)" => [438,17,1000,500]
+    "Fire Resistance" => [373,13,1000,100],
+    "Poison (SPLASH)" => [438,27,1000,100],
+    "Weakness (SPLASH)" => [438,35,1000,100],
+    "Slowness (SPLASH)" => [438,17,1000,100]
   ];
 
   public $Skulls = [
     "ICON" => ["Skulls",144,0],
-    "Zombie Skull" => [144,2,500,300],
-    "Wither Skull" => [144,1,500,300],
-    "Skin Head" => [144,3,50,30],
-    "Creeper Skull" => [144,4,500,300],
-    "Dragon Skull" => [144,5,1000,600],
-    "Skeleton Skull" => [144,0,500,300]
+    "Zombie Skull" => [144,2,500,50],
+    "Wither Skull" => [144,1,500,50],
+    "Skin Head" => [144,3,50,10],
+    "Creeper Skull" => [144,4,500,50],
+    "Dragon Skull" => [144,5,1000,60],
+    "Skeleton Skull" => [144,0,500,50]
   ];
 	
   public function onEnable(){
