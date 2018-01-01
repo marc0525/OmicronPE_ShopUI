@@ -52,7 +52,8 @@ public $Blocks = [
     "Coal" => [263,0,100,50],
     "Iron Ingot" => [265,0,200,100],
     "Gold Ingot" => [266,0,300,150],
-    "Diamond" => [264,0,500,250]
+    "Diamond" => [264,0,500,250],
+    "Lapis" => [351,4,500,250]
   ];
 
   public $Tools = [
