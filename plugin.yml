@@ -1,9 +1,9 @@
 name: GuiShop
 main: GuiShop\Main
-version: 1.0.0-ALPHA1
+version: 1.0.0-BETA1
 api: [3.0.0-ALPHA9, 3.0.0-ALPHA10]
 author: VMPE Developement Team
-description: ShopGUI
+description: ShopUI for servers!
 commands:
  shop:
   description: Opens the shop gui
