@@ -69,7 +69,7 @@ class SimpleForm implements CustomUI, \JsonSerializable{
 	 * @param Player $player
 	 * @throws Exception
 	 */
-	final public function handle(int $response, Player $player){
+	final public function handle($response, Player $player){
 		if (isset($this->buttons[$response])){
 			$this->buttons[$response]->handle(true, $player);
 		} else{
