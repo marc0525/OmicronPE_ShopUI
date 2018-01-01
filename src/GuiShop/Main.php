@@ -230,7 +230,7 @@ public $Blocks = [
     }
 
     $ui = new CustomForm($iname);
-    $slider = new Slider("Amount ",1,64,1);
+    $slider = new Slider("Amount ",1,500,1);
     $toggle = new Toggle("Selling");
     if($sell == 0) $sell = "0";
     $label = new Label(TF::GREEN."Buy: $".TF::GREEN.$cost.TF::RED."\nSell: $".TF::RED.$sell);
