@@ -20,7 +20,7 @@ class Button extends UIElement{
 	 *
 	 * @param string $text Button text
 	 */
-	public function __construct(string $text, Button $text){
+	public function __construct(string $text, $text){
 		$this->text = $text;
 	}
 
