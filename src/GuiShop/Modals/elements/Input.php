@@ -17,7 +17,7 @@ class Input extends UIElement{
 	 * @param string $placeholder
 	 * @param string $defaultText
 	 */
-	public function __construct($text, $placeholder, $defaultText = ''){
+	public function __construct(string $text, string $placeholder, string $defaultText = ''){
 		$this->text = $text;
 		$this->placeholder = $placeholder;
 		$this->defaultText = $defaultText;
@@ -27,7 +27,7 @@ class Input extends UIElement{
 	 *
 	 * @return array
 	 */
-	final public function jsonSerialize(){
+	final public function jsonSerialize(): array{
 		return [
 			"type" => "input",
 			"text" => $this->text,
