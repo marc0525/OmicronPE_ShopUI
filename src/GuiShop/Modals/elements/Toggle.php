@@ -14,7 +14,7 @@ class Toggle extends UIElement{
 	 * @param string $text
 	 * @param bool $value
 	 */
-	public function __construct($text, bool $value = false){
+	public function __construct(string $text, bool $value = false){
 		$this->text = $text;
 		$this->defaultValue = $value;
 	}
@@ -29,7 +29,7 @@ class Toggle extends UIElement{
 	/**
 	 * @return array
 	 */
-	public function jsonSerialize(){
+	public function jsonSerialize(): array{
 		return [
 			"type" => "toggle",
 			"text" => $this->text,
