@@ -123,12 +123,13 @@ public $Blocks = [
 	
   public $Mobs = [
     "ICON" => ["Mobs",52,0],
-    "Blaze" => [383,94,50000,1000],
-    "Creeper" => [383,33,50000,1000],
+    "Blaze" => [383,43,50000,1000],
+    "Stray" => [383,46,50000,1000],
     "Skeleton" => [383,34,50000,1000],
     "Zombie" => [383,32,50000,1000],
     "Husk" => [383,47,50000,1000],
     "Zombie_Pigman" => [383,36,50000,1000],
+    "Creeper" => [383,33,50000,1000],
     "Mob Spawner" => [52,0,55000,2000]
   ];
 
@@ -153,6 +154,16 @@ public $Blocks = [
     "Skeleton Skull" => [144,0,500,50]
   ];
 	
+  public $MobDrops = [
+    "ICON" => ["MobDrops",369,0],
+    "Blaze Rod" => [369,500,50],
+    "Gold Nuggets" => [371,500,50],
+    "Rotten Flesh" => [367,500,50],
+    "GunPowder" => [289,500,50],
+   "Carrots" => [391,500,50],
+   "Potato" => [392,500,50]
+];
+	
   public function onEnable(){
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
     PacketPool::registerPacket(new GuiDataPickItemPacket());
@@ -160,7 +171,7 @@ public $Blocks = [
 		PacketPool::registerPacket(new ModalFormResponsePacket());
 		PacketPool::registerPacket(new ServerSettingsRequestPacket());
 		PacketPool::registerPacket(new ServerSettingsResponsePacket());
-    $this->item = [$this->Skulls, $this->Potions, $this->Mobs, $this->Raiding, $this->Farming, $this->Armor, $this->Tools, $this->Food, $this->Ores, $this->Blocks, $this->Miscellaneous];
+    $this->item = [$this->MobDrops, $this->Skulls, $this->Potions, $this->Mobs, $this->Raiding, $this->Farming, $this->Armor, $this->Tools, $this->Food, $this->Ores, $this->Blocks, $this->Miscellaneous];
   }
 
   public function sendMainShop(Player $player){
