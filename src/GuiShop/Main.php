@@ -159,9 +159,7 @@ public $Blocks = [
     "Blaze Rod" => [369,0,500,50],
     "Gold Nuggets" => [371,0,500,50],
     "Rotten Flesh" => [367,0,500,50],
-    "GunPowder" => [289,0,500,50],
-    "Carrots" => [391,0,500,50],
-    "Potato" => [392,0,500,50]
+    "GunPowder" => [289,0,500,50]
   ];
 	
   public function onEnable(){
