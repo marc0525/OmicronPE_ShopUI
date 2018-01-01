@@ -20,7 +20,7 @@ class Button extends UIElement{
 	 *
 	 * @param string $text Button text
 	 */
-	public function __construct($text){
+	public function __construct(string $text, Button $text){
 		$this->text = $text;
 	}
 
@@ -44,7 +44,7 @@ class Button extends UIElement{
 	 *
 	 * @return array
 	 */
-	final public function jsonSerialize(){
+	final public function jsonSerialize(): array{
 		$data = ['text' => $this->text];
 		if ($this->imageType != ''){
 			$data['image'] = [
