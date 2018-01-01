@@ -16,7 +16,7 @@ class Dropdown extends UIElement{
 	 * @param string $text
 	 * @param string[] $options
 	 */
-	public function __construct($text, $options = []){
+	public function __construct(string $text, $options = []){
 		$this->text = $text;
 		$this->options = $options;
 	}
