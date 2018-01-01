@@ -169,7 +169,7 @@ public $Blocks = [
   public $MobDrop = [
     "ICON" => ["MobDrop",369,0],
     "Blaze Rod" => [369,0,500,50],
-    "Gold Nuggets" => [371,0,500,50],
+    "Gold Nuggets" => [371,0,500,10],
     "Rotten Flesh" => [367,0,500,50],
     "GunPowder" => [289,0,500,50]
   ];
