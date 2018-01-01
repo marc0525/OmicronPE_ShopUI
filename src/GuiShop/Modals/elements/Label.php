@@ -31,7 +31,7 @@ class Label extends UIElement{
 	 * @param null $value
 	 * @param Player $player
 	 */
-	final public function handle(null $value, Player $player){
+	final public function handle($value, Player $player){
 	}
 
 }
