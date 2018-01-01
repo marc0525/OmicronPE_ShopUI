@@ -25,7 +25,7 @@ class ModalWindow implements CustomUI, \JsonSerializable{
 	 * @param string $trueButtonText
 	 * @param string $falseButtonText
 	 */
-	public function __construct($title, $content, $trueButtonText, $falseButtonText){
+	public function __construct(string $title, string $content, string $trueButtonText, string $falseButtonText){
 		$this->title = $title;
 		$this->content = $content;
 		$this->trueButtonText = $trueButtonText;
@@ -56,7 +56,7 @@ class ModalWindow implements CustomUI, \JsonSerializable{
 	 * @param Player $player
 	 * @throws Exception
 	 */
-	final public function handle($response, Player $player){
+	final public function handle(int $response, Button index Player $player){
 	}
 
 }
