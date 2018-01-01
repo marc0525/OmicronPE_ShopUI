@@ -16,7 +16,7 @@ class Dropdown extends UIElement{
 	 * @param string $text
 	 * @param string[] $options
 	 */
-	public function __construct($text, $options = []){
+	public function __construct(string $text, $options = []){
 		$this->text = $text;
 		$this->options = $options;
 	}
@@ -26,7 +26,7 @@ class Dropdown extends UIElement{
 	 * @param string $optionText
 	 * @param boolean $isDefault
 	 */
-	public function addOption($optionText, $isDefault = false){
+	public function addOption(string $optionText, boolean $isDefault = false){
 		if ($isDefault){
 			$this->defaultOptionIndex = count($this->options);
 		}
@@ -38,7 +38,7 @@ class Dropdown extends UIElement{
 	 * @param string $optionText
 	 * @return boolean
 	 */
-	public function setOptionAsDefault($optionText){
+	public function setOptionAsDefault(string $optionText): boolean{
 		$index = array_search($optionText, $this->options);
 		if ($index === false){
 			return false;
