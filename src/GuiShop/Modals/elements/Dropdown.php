@@ -26,7 +26,7 @@ class Dropdown extends UIElement{
 	 * @param string $optionText
 	 * @param boolean $isDefault
 	 */
-	public function addOption(string $optionText, boolean $isDefault = false){
+	public function addOption($optionText, $isDefault = false){
 		if ($isDefault){
 			$this->defaultOptionIndex = count($this->options);
 		}
