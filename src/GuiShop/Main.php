@@ -154,7 +154,7 @@ public $Blocks = [
     "Skeleton Skull" => [144,0,500,50]
   ];
 	
-  public $MobDrops = [
+  public $MobDrop = [
     "ICON" => ["MobDrop",369,0],
     "Blaze Rod" => [369,0,500,50],
     "Gold Nuggets" => [371,0,500,50],
@@ -171,7 +171,7 @@ public $Blocks = [
 		PacketPool::registerPacket(new ModalFormResponsePacket());
 		PacketPool::registerPacket(new ServerSettingsRequestPacket());
 		PacketPool::registerPacket(new ServerSettingsResponsePacket());
-    $this->item = [$this->MobDrops, $this->Skulls, $this->Potions, $this->Mobs, $this->Raiding, $this->Farming, $this->Armor, $this->Tools, $this->Food, $this->Ores, $this->Blocks, $this->Miscellaneous];
+    $this->item = [$this->MobDrop, $this->Skulls, $this->Potions, $this->Mobs, $this->Raiding, $this->Farming, $this->Armor, $this->Tools, $this->Food, $this->Ores, $this->Blocks, $this->Miscellaneous];
   }
 
   public function sendMainShop(Player $player){
