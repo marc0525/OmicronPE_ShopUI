@@ -24,7 +24,7 @@ class Slider extends UIElement{
 	 * @param float $step
 	 * @throws Exception
 	 */
-	public function __construct($text, $min, $max, $step = 0.0){
+	public function __construct(string $text, float $min, float $max, float $step = 0.0){
 		if ($min > $max){
 			throw new \Exception(__METHOD__ . ' Borders are messed up');
 		}
@@ -40,7 +40,7 @@ class Slider extends UIElement{
 	 * @param float $step
 	 * @throws Exception
 	 */
-	public function setStep($step){
+	public function setStep(float $step){
 		if ($step < 0){
 			throw new \Exception(__METHOD__ . ' Step should be positive');
 		}
@@ -52,7 +52,7 @@ class Slider extends UIElement{
 	 * @param float $value
 	 * @throws Exception
 	 */
-	public function setDefaultValue($value){
+	public function setDefaultValue(float $value){
 		if ($value < $this->min || $value > $this->max){
 			throw new \Exception(__METHOD__ . ' Default value out of borders');
 		}
@@ -63,7 +63,7 @@ class Slider extends UIElement{
 	 *
 	 * @return array
 	 */
-	final public function jsonSerialize(){
+	final public function jsonSerialize(): array{
 		$data = [
 			"type" => "slider",
 			"text" => $this->text,
