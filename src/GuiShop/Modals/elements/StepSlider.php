@@ -16,7 +16,7 @@ class StepSlider extends UIElement{
 	 * @param string $text
 	 * @param string[] $steps
 	 */
-	public function __construct($text, $steps = []){
+	public function __construct(string $text, $steps = []){
 		$this->text = $text;
 		$this->steps = $steps;
 	}
@@ -38,7 +38,7 @@ class StepSlider extends UIElement{
 	 * @param string $stepText
 	 * @return boolean
 	 */
-	public function setStepAsDefault($stepText){
+	public function setStepAsDefault(string $stepText): boolean{
 		$index = array_search($stepText, $this->steps);
 		if ($index === false){
 			return false;
@@ -60,7 +60,7 @@ class StepSlider extends UIElement{
 	 *
 	 * @return array
 	 */
-	final public function jsonSerialize(){
+	final public function jsonSerialize(): array{
 		return [
 			'type' => 'step_slider',
 			'text' => $this->text,
