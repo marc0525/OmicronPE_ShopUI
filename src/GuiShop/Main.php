@@ -155,13 +155,13 @@ public $Blocks = [
   ];
 	
   public $MobDrops = [
-    "ICON" => ["MobDrops",369,0],
-    "Blaze Rod" => [369,500,50],
-    "Gold Nuggets" => [371,500,50],
-    "Rotten Flesh" => [367,500,50],
-    "GunPowder" => [289,500,50],
-    "Carrots" => [391,500,50],
-    "Potato" => [392,500,50]
+    "ICON" => ["MobDrop",369,0],
+    "Blaze Rod" => [369,0,500,50],
+    "Gold Nuggets" => [371,0,500,50],
+    "Rotten Flesh" => [367,0,500,50],
+    "GunPowder" => [289,0,500,50],
+    "Carrots" => [391,0,500,50],
+    "Potato" => [392,0,500,50]
   ];
 	
   public function onEnable(){
