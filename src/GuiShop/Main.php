@@ -157,13 +157,13 @@ public $Blocks = [
   ];
 
   public $Skulls = [
-    "ICON" => ["Skulls",144,0],
-    "Zombie Skull" => [144,2,500,50],
-    "Wither Skull" => [144,1,500,50],
-    "Skin Head" => [144,3,50,10],
-    "Creeper Skull" => [144,4,500,50],
-    "Dragon Skull" => [144,5,1000,60],
-    "Skeleton Skull" => [144,0,500,50]
+    "ICON" => ["Skulls",397,0],
+    "Zombie Skull" => [397,2,500,50],
+    "Wither Skull" => [397,1,500,50],
+    "Skin Head" => [397,3,50,10],
+    "Creeper Skull" => [397,4,500,50],
+    "Dragon Skull" => [397,5,1000,60],
+    "Skeleton Skull" => [397,0,500,50]
   ];
 	
   public $MobDrop = [
@@ -251,8 +251,8 @@ public $Blocks = [
     }
 
     $ui = new CustomForm($iname);
-    $slider = new Slider("Amount ",1,500,1);
-    $toggle = new Toggle("Selling");
+    $slider = new Slider("§dAmount ",1,500,0);
+    $toggle = new Toggle("§5Selling");
     if($sell == 0) $sell = "0";
     $label = new Label(TF::GREEN."Buy: $".TF::GREEN.$cost.TF::RED."\nSell: $".TF::RED.$sell);
     $ui->addElement($label);
