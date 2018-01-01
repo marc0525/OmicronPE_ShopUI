@@ -10,7 +10,7 @@ class Label extends UIElement{
 	 *
 	 * @param string $text
 	 */
-	public function __construct($text){
+	public function __construct(string $text){
 		$this->text = $text;
 	}
 
@@ -18,7 +18,7 @@ class Label extends UIElement{
 	 *
 	 * @return array
 	 */
-	final public function jsonSerialize(){
+	final public function jsonSerialize(): array{
 		return [
 			"type" => "label",
 			"text" => $this->text
@@ -31,7 +31,7 @@ class Label extends UIElement{
 	 * @param null $value
 	 * @param Player $player
 	 */
-	final public function handle($value, Player $player){
+	final public function handle(null $value, Player $player){
 	}
 
 }
