@@ -160,9 +160,9 @@ public $Blocks = [
     "Gold Nuggets" => [371,500,50],
     "Rotten Flesh" => [367,500,50],
     "GunPowder" => [289,500,50],
-   "Carrots" => [391,500,50],
-   "Potato" => [392,500,50]
-];
+    "Carrots" => [391,500,50],
+    "Potato" => [392,500,50]
+  ];
 	
   public function onEnable(){
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
