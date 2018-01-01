@@ -118,7 +118,7 @@ public $Blocks = [
     "Book & Quill" => [386,0,100,0],
     "Elytra" => [444,0,1000,500],
     "Boats" => [333,0,1000,500],
-    "Totem of Undying" => [450,1000,500]
+    "Totem of Undying" => [450,0,1000,500]
   ];
 
   public $Raiding = [
