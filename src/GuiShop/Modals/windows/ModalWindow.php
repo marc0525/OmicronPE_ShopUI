@@ -56,7 +56,7 @@ class ModalWindow implements CustomUI, \JsonSerializable{
 	 * @param Player $player
 	 * @throws Exception
 	 */
-	final public function handle(int $response, Button index Player $player){
+	final public function handle(int $response, Player $player){
 	}
 
 }
