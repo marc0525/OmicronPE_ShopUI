@@ -1,8 +1,8 @@
-name: GuiShop
+name: OmicronPE-ShopUI
 main: GuiShop\Main
-version: 1.0.0-BETA1
+version: 2
 api: [3.0.0-ALPHA9, 3.0.0-ALPHA10, 3.0.0-ALPHA11]
-author: MangoTheDev
+author: NicKPlayzz
 description: ShopUI for servers!
 commands:
  shop:
