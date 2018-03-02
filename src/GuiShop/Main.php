@@ -135,14 +135,16 @@ public $Blocks = [
 	
   public $Mobs = [
     "ICON" => ["Mobs",52,0],
-    "Blaze" => [383,43,50000,1000],
-    "Stray" => [383,46,50000,1000],
-    "Skeleton" => [383,34,50000,1000],
-    "Zombie" => [383,32,50000,1000],
-    "Husk" => [383,47,50000,1000],
-    "Zombie_Pigman" => [383,36,50000,1000],
-    "Creeper" => [383,33,50000,1000],
     "Mob Spawner" => [52,0,55000,2000]
+    "Chicken" => [383,10,100000,80000],
+    "Sheep" => [383,13,120000,100000],
+    "Pig" => [383,12,110000,90000],
+    "Stray" => [383,46,130000,100000],
+    "Skeleton" => [383,34,150000,120000],
+    "Zombie" => [383,32,170000,150000],
+    "Husk" => [383,47,200000,180000],
+    "Zombie_Pigman" => [383,36,250000,200000],
+    "Iron_Golem" => [383,20,500000,250000]
   ];
 
   public $Potions = [
@@ -155,16 +157,6 @@ public $Blocks = [
     "Weakness (SPLASH)" => [438,35,1000,100],
     "Slowness (SPLASH)" => [438,17,1000,100]
   ];
-
-  public $Skulls = [
-    "ICON" => ["Skulls",397,0],
-    "Zombie Skull" => [397,2,500,50],
-    "Wither Skull" => [397,1,500,50],
-    "Skin Head" => [397,3,50,10],
-    "Creeper Skull" => [397,4,500,50],
-    "Dragon Skull" => [397,5,1000,60],
-    "Skeleton Skull" => [397,0,500,50]
-  ];
 	
   public $MobDrop = [
     "ICON" => ["MobDrop",369,0],
@@ -172,16 +164,6 @@ public $Blocks = [
     "Gold Nuggets" => [371,0,500,10],
     "Rotten Flesh" => [367,0,500,50],
     "GunPowder" => [289,0,500,50]
-  ];
-
-  public $Spawners = [
-    "ICON" => ["Spawners",52,0]
-    "Monster Spawner" => [52,0,50000,40000],
-    "Spawn Chicken" => [383,10,100000,80000],
-    "Spawn Sheep" => [383,13,120000,100000],
-    "Spawn Pig" => [383,12,110000,90000],
-    "Spawn Zombie" => [383,32,150000,130000],
-    "Spawn Skeleton" => [383,34,170000,150000]
   ];
 	
   public function onEnable(){
