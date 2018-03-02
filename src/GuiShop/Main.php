@@ -185,12 +185,12 @@ public $Blocks = [
   }
 
   public function sendMainShop(Player $player){
-    $ui = new SimpleForm("§2Aversion§cShop","       §aPurchase and Sell items Here!");
+    $ui = new SimpleForm("§bOmicron§4PE §cShop","       §aPurchase and Sell items Here!");
     foreach($this->item as $category){
       if(isset($category["ICON"])){
         $rawitemdata = $category["ICON"];
         $button = new Button($rawitemdata[0]);
-        $button->addImage('url', "aversionpe.buycraft.net".$rawitemdata[1]."-".$rawitemdata[2].".png");
+        $button->addImage('url', "omicronpe.buycraft.net".$rawitemdata[1]."-".$rawitemdata[2].".png");
         $ui->addButton($button);
       }
     }
@@ -202,7 +202,7 @@ public $Blocks = [
   }
 
   public function sendShop(Player $player, $id){
-    $ui = new SimpleForm("§2Aversion§cShop","       §aPurchase and Sell items Here!");
+    $ui = new SimpleForm("§bOmicron§4PE §cShop","       §aPurchase and Sell items Here!");
     $ids = -1;
     foreach($this->item as $category){
       $ids++;
