@@ -173,6 +173,11 @@ public $Blocks = [
     "Rotten Flesh" => [367,0,500,50],
     "GunPowder" => [289,0,500,50]
   ];
+
+  public $Spawners = [
+    "ICON" => ["Spawners",52,0]
+    "Monster Spawner" => [52,0,50000,40000],
+    "Spawn Chicken" => [383,10,100000,80000],
 	
   public function onEnable(){
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
