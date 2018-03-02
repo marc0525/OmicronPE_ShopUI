@@ -178,6 +178,11 @@ public $Blocks = [
     "ICON" => ["Spawners",52,0]
     "Monster Spawner" => [52,0,50000,40000],
     "Spawn Chicken" => [383,10,100000,80000],
+    "Spawn Sheep" => [383,13,120000,100000],
+    "Spawn Pig" => [383,12,110000,90000],
+    "Spawn Zombie" => [383,32,150000,130000],
+    "Spawn Skeleton" => [383,34,170000,150000]
+  ];
 	
   public function onEnable(){
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
@@ -218,7 +223,7 @@ public $Blocks = [
         foreach($data as $name => $item){
           if($name != "ICON"){
             $button = new Button($name);
-            $button->addImage('url', "aversionpe.buycraft.net".$item[0]."-".$item[1].".png");
+            $button->addImage('url', "omicronpe.buycraft.net".$item[0]."-".$item[1].".png");
             $ui->addButton($button);
           }
         }
